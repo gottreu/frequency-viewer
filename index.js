@@ -17,7 +17,7 @@ function Scope (opts) {
     var self = this;
     if (!(this instanceof Scope)) return new Scope(opts);
     if (!opts) opts = {};
-    this.rate = opts.rate || 44000;
+    this.rate = opts.rate || 44100;
     
     this.element = domify(html)[0];
     this.element.style.width = '100%';

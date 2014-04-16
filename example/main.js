@@ -13,7 +13,7 @@ var index = 0;
 (function next () {
     var t;
     for (var i = 0; i < 8000; i++) {
-        t = (index + i) / 44000;
+        t = (index + i) / 44100;
         data[(i+index) % data.length] = fn(t);
     }
     index += i;
